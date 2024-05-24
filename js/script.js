@@ -6,23 +6,20 @@
 
 "use strict"
 
-function myButtonClicked() {
+window.onload = function () {
+  // this calculates volume of a sphere
 
-  //input
-  let firstNumber = parseInt(document.getElementById("first-number").value)
-  let secondNumber = parseInt(document.getElementById("second-number").value)
+  const params = new URLSearchParams(document.location.search)
 
-  //process
-  let counter = 0
-  let result = 0
+  // input
+  const radiusSphere = params.get('radiusSphere')
+  console.log(radiusSphere)
 
-  while (counter < secondNumber) {
-    result += firstNumber
-    counter += 1
-  }
+  // process
+  const volumeSphere = (4 / 3) * Math.PI * Math.pow(radiusSphere, 3)
+  const dimensions = "<ul>\n<li>Radius of a Sphere = " + radiusSphere + "</li>"
 
-  let finalResult = result
-
-  // output 
-  document.getElementById("final-answer").innerHTML = "Your result is " + finalResult
+  // output
+  document.getElementById('dimensions').innerHTML = dimensions
+  document.getElementById('area').innerHTML = 'Volume is: ' + volumeSphere + ' cm³'
 }

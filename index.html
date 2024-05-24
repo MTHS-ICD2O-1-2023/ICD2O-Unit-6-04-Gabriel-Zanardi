@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Multiply with addition, in JS" />
+  <meta name="description" content="Volume of a Sphere, Query String" />
   <meta name="keywords" content="maths, ics2o" />
   <meta name="author" content="Gabriel" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <title>Multiply with addition, in JS</title>
+  <title>Volume of a Sphere, Query String</title>
 </head>
 <body>
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -22,43 +22,20 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Multiply with addition, in JS</span>
+        <span class="mdl-layout-title">Volume of a Sphere, Query String</span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/Repeated-Addition.png" height="100" width="100" alt="simple multiplication" />
+        <img src="./images/the-formula-for-volume-sphere.png" height="100" width="100" alt="volume of a sphere" />
       </div>
-      <div class="page-content">
-        Please enter two numbers to multiply
-      </div>
-      <br />
-      <br />
-      <!-- Simple Textfield -->
-      <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="first-number">
-        <label class="mdl-textfield__label" for="first-number">First number here</label>
-        <span class="mdl-textfield__error">Input is not a number!</span>
-      </div>
-      <br />
-      <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="second-number">
-        <label class="mdl-textfield__label" for="second-number">Second number here</label>
-        <span class="mdl-textfield__error">Input is not a number!</span>
-      </div>
-      <br />
-      <br />
-      <!-- Accent-colored raised button with ripple -->
-      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-        onclick="myButtonClicked()">
-        Calculate
-      </button>
-      <br />
-      <br />
-      <div class="page-content-answer">
-        <div id="final-answer"></div>
-      </div>
+    <h2>Formula:</h2>
+    <h3>V = (4 / 3)πr³ </h3>
+    <div id="answers">
+      The dimensions are:
+      <div id="dimensions"></div>
+      <div id="volume"></div>
+    </div>
     </main>
-  </div>
-</body>
-</html>
+    </body>
+    </html>
