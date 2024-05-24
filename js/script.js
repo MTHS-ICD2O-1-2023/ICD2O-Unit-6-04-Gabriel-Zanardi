@@ -21,5 +21,5 @@ window.onload = function () {
 
   // output
   document.getElementById('dimensions').innerHTML = dimensions
-  document.getElementById('area').innerHTML = 'Volume is: ' + volumeSphere + ' cm³'
+  document.getElementById('volume').innerHTML = 'Volume is: ' + volumeSphere + ' cm³'
 }
